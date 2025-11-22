@@ -2,13 +2,25 @@
 <html>
 <head>
   <title>Installing Momma Mobile…</title>
-  <!-- Try deep link first -->
-  <meta http-equiv="refresh" content="0; url=nettielink://child/link?token=abc123&guardianId=xyz456">
   <script>
-    // Fallback: if app not installed, download latest APK
-    setTimeout(function() {
-      window.location.href = "https://github.com/CoreyD84/airnettie.github.io/releases/latest/download/app-release.apk";
-    }, 2000);
+    (function() {
+      // Preserve query string from QR (e.g. ?token=...&guardianId=...)
+      var params = window.location.search || '';
+
+      // Deep link with dynamic params
+      var deepLink = "nettielink://child/link" + params;
+
+      // Fallback: always download latest APK
+      var apkUrl = "https://github.com/CoreyD84/airnettie.github.io/releases/latest/download/app-release.apk";
+
+      // Try deep link first
+      window.location.replace(deepLink);
+
+      // Fallback after delay
+      setTimeout(function() {
+        window.location.replace(apkUrl);
+      }, 2000);
+    })();
   </script>
 </head>
 <body>
