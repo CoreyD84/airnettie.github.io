@@ -1,0 +1,35 @@
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+<script>
+    // ✅ Initialize Firebase
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_PROJECT.firebaseapp.com",
+      databaseURL: "https://YOUR_PROJECT.firebaseio.com",
+      projectId: "YOUR_PROJECT",
+      storageBucket: "YOUR_PROJECT.appspot.com",
+      messagingSenderId: "YOUR_SENDER_ID",
+      appId: "YOUR_APP_ID"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+
+    // ✅ Replace with actual childId
+    const childId = "your_child_id_here";
+
+    db.ref(`location/${childId}`).get().then(snapshot => {
+      if (snapshot.exists()) {
+        const { latitude, longitude } = snapshot.val();
+
+        const map = L.map('map').setView([latitude, longitude], 14);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        L.marker([latitude, longitude]).addTo(map).bindPopup("Child's Last Location").openPopup();
+
+        document.getElementById('directionsBtn').addEventListener('click', () => {
+          window.location.href = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
+        });
+      } else {
+        alert("No location data found.");
+      }
+    });
+</script>

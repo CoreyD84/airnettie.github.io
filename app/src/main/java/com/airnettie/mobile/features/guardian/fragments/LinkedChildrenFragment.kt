@@ -1,0 +1,19 @@
+package com.airnettie.mobile.features.guardian.fragments
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.compose.ui.platform.ComposeView
+import androidx.fragment.app.Fragment
+import com.airnettie.mobile.tabs.LinkedChildrenTab
+
+class LinkedChildrenFragment : Fragment() {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        return ComposeView(requireContext()).apply {
+            setContent {
+                LinkedChildrenTab()
+            }
+        }
+    }
+}

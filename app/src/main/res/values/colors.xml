@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 🎨 Brand Identity -->
+    <color name="primary">#6200EE</color>
+    <color name="primary_variant">#3700B3</color>
+    <color name="secondary">#03DAC5</color>
+    <color name="secondary_variant">#018786</color>
+
+    <!-- 🧩 Material Components Compatibility -->
+    <color name="colorPrimary">@color/primary</color>
+    <color name="colorPrimaryVariant">@color/primary_variant</color>
+    <color name="colorSecondary">@color/secondary</color>
+    <color name="colorSecondaryVariant">@color/secondary_variant</color>
+
+    <!-- 🌈 Material Theme Shades -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">@color/primary</color>
+    <color name="purple_700">@color/primary_variant</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+
+    <!-- 🪟 Material3 Semantic Tokens -->
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#000000</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorOnBackground">#000000</color>
+    <color name="colorError">#B00020</color>
+    <color name="colorOnError">#FFFFFF</color>
+
+    <!-- ⚫ Neutrals -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_medium">#9E9E9E</color>
+    <color name="gray_dark">#212121</color>
+
+    <!-- 💡 Emotional Feedback -->
+    <color name="success_green">#4CAF50</color>
+    <color name="warning_orange">#FF9800</color>
+    <color name="error_red">#F44336</color>
+    <color name="calm_blue">#2196F3</color>
+
+    <!-- 🚨 Severity Colors for RecentDetectionsTab -->
+    <color name="severity_critical">@color/error_red</color>
+    <color name="severity_medium">@color/warning_orange</color>
+    <color name="severity_low">@color/success_green</color>
+
+    <!-- ✨ UI Enhancements -->
+    <color name="tab_highlight">@color/purple_200</color>
+    <color name="tab_border">#66000000</color> <!-- 40% black -->
+    <color name="tab_fill">#CCFFFFFF</color> <!-- 80% white -->
+
+</resources>

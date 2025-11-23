@@ -1,0 +1,136 @@
+<resources>
+
+    <!-- App Identity -->
+    <string name="app_name">Momma Mobile</string>
+
+    <!-- Onboarding -->
+    <string name="emotional_prompt">Link your child’s device to begin emotional monitoring</string>
+    <string name="link_child_button">Link Child</string>
+    <string name="qr_code_image">QR Code for linking child device</string>
+    <string name="mascot_description">Nettie mascot</string>
+    <string name="safescope_description">SafeScope helps protect users by filtering explicit content and supporting emotional safety through accessibility monitoring.</string>
+
+    <!-- Dashboard Messaging -->
+    <string name="nettie_s_watching_over_your_platforms">Nettie’s watching over your platforms.</string>
+    <string name="online_safety_tip">Online Safety Tip</string>
+    <string name="show_another_tip">Show Another Tip</string>
+    <string name="enable_safescope_block_explicit_sites">Enable SafeScope (Block Explicit Sites)</string>
+
+    <!-- Platform Labels -->
+    <string name="discord">Discord</string>
+    <string name="roblox">Roblox</string>
+    <string name="facebook_messenger">Facebook / Messenger</string>
+
+    <!-- Discord Consent -->
+    <string name="view_discord_consent">View Discord Consent</string>
+    <string name="grant_discord_consent">Grant Discord Consent</string>
+    <string name="allow_discord_access">Allow Discord Access</string>
+
+    <!-- Roblox Consent -->
+    <string name="view_roblox_consent">View Roblox Consent</string>
+    <string name="grant_roblox_consent">Grant Roblox Consent</string>
+    <string name="allow_roblox_access">Allow Roblox Access</string>
+
+    <!-- Facebook/Messenger Consent -->
+    <string name="view_facebook_consent">View Facebook Consent</string>
+    <string name="grant_facebook_consent">Grant Facebook Consent</string>
+    <string name="allow_facebook_access">Allow Facebook Access</string>
+
+    <!-- UI Actions -->
+    <string name="refresh">Refresh</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="status_message">Status Message</string>
+    <string name="status_message_default">Status will appear here</string>
+
+    <!-- QR Linking Flow -->
+    <string name="qr_link_success">Child device successfully linked</string>
+    <string name="qr_link_failure">Unable to link device. Please try again.</string>
+    <string name="qr_scan_prompt">Scan this QR code on your child’s device to complete linking</string>
+    <string name="qr_code_instruction">Scan this QR code on your child’s device to install Momma Mobile and link them to your household.</string>
+
+    <!-- Accessibility & Feedback -->
+    <string name="loading">Loading…</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="try_again">Try Again</string>
+
+    <!-- Mascot Mood -->
+    <string name="mascot_mood_happy">Mascot is feeling joyful and safe</string>
+    <string name="mascot_mood_alert">Mascot is alert — something might need attention</string>
+    <string name="mascot_mood_worried">Mascot is worried — please check flagged cases</string>
+
+    <!-- Escalation Feedback -->
+    <string name="escalation_triggered">Escalation triggered — guardian notified</string>
+    <string name="escalation_failed">Unable to escalate — please check connection</string>
+
+    <!-- Child Linking Confirmation -->
+    <string name="linking_in_progress">Linking in progress…</string>
+    <string name="linking_complete">Child successfully linked to your dashboard</string>
+
+    <!-- SMS Screen -->
+    <string name="sms_recipient_hint">Recipient phone number</string>
+    <string name="sms_recipient_content_description">Phone number input</string>
+    <string name="sms_message_hint">Message</string>
+    <string name="sms_message_content_description">Message input</string>
+    <string name="sms_send_button_text">Send</string>
+    <string name="sms_send_button_content_description">Send message button</string>
+
+    <!-- Scanner Tab -->
+    <string name="scanner_no_flags">🟢 No threats detected.</string>
+    <string name="scanner_loading">⏳ Loading scanner patterns...</string>
+    <string name="scanner_ready">Ready to scan. Enter a phrase below.</string>
+    <string name="scanner_safe">✅ Safe: No harmful patterns detected</string>
+    <string name="scanner_empty_input">Please enter a phrase to scan.</string>
+    <string name="scanner_flagged_template">⚠️ Flagged Category: %1$s\nSeverity: %2$s\nMatched: %3$s</string>
+    <string name="location_will_appear_here">📍 Location will appear here</string>
+    <string name="refresh_location">🔄 Refresh Location</string>
+    <string name="location_loading">📍 Loading last known location...</string>
+    <string name="get_directions">🧭 Get Directions</string>
+    <string name="loading_last_known_location">📍 Loading last known location...</string>
+
+    <!-- 🔐 Login & Signup Errors -->
+    <string name="error_enter_credentials">Please enter both email and password</string>
+    <string name="error_login_failed">Login failed: %1$s</string>
+    <string name="error_signup_failed">Signup failed: %1$s</string>
+    <string name="error_missing_identity">Missing guardian identity. Please log in again.</string>
+    <string name="error_enter_name">Please enter a name</string>
+
+    <!-- 🧠 Biometric Errors -->
+    <string name="error_biometric_failed">Biometric login failed: %1$s</string>
+    <string name="error_biometric_error">Biometric error: %1$s</string>
+    <string name="error_biometric_auth_failed">Biometric authentication failed</string>
+
+    <!-- 👋 Onboarding Dialog -->
+    <string name="title_welcome">Welcome to Momma Mobile</string>
+    <string name="message_ask_name">Before we begin, what should Nettie call you?</string>
+    <string name="button_confirm">Confirm</string>
+    <string name="title_nice_to_meet">Nice to meet you, %1$s!</string>
+    <string name="message_ready_to_protect">Nettie’s ready to protect your family 💙</string>
+    <string name="button_lets_go">Let’s go!</string>
+
+    <!-- 🔐 Biometric Prompt -->
+    <string name="biometric_title">Login with Biometrics</string>
+    <string name="biometric_subtitle">Use fingerprint or face unlock</string>
+    <string name="biometric_cancel">Cancel</string>
+    <string name="biometric_prompt_available">Biometric login is available</string>
+
+    <!-- 🧩 Input Hints -->
+    <string name="hint_enter_name">Enter your name</string>
+    <string name="loading_recent_detections">Loading recent detections...</string>
+
+    <!-- Dashboard Tab Buttons -->
+    <string name="btn_recent">RECENT</string>
+    <string name="btn_flagged">FLAGGED</string>
+    <string name="btn_freeze">FREEZE</string>
+    <string name="btn_linked">LINKED</string>
+    <string name="btn_mascot">MASCOT</string>
+    <string name="btn_scanner">SCANNER</string>
+    <string name="btn_platforms">PLATFORMS</string>
+    <string name="btn_sms">SMS</string>
+    <string name="btn_location">LOCATION</string>
+
+</resources>

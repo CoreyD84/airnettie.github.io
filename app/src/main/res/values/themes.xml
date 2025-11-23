@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ✅ Material Components Base Theme -->
+    <style name="Theme.MobileNettie" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Material color tokens -->
+        
+        
+        
+        
+        
+        
+        
+        
+
+        <!-- Android system attributes -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowAnimationStyle">@style/MommaWindowAnimation</item>
+    </style>
+
+    <!-- 🎨 Button Style (Optional Override) -->
+    <style name="MommaButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/purple_500</item>
+    </style>
+
+    <!-- 📝 TextView Style (Optional Override) -->
+    <style name="MommaTextView" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 🎬 Window Animation -->
+    <style name="MommaWindowAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+</resources>

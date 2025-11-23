@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "985745924657",
+    "project_id": "air-nettie",
+    "storage_bucket": "air-nettie.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985745924657:android:45ec4d36b0383f6783eb10",
+        "android_client_info": {
+          "package_name": "com.airnettie.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVfefUOrXfplJZM7bdldCAiVKC9oRJ6Cc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nettie_background"
+    tools:context=".mobilenettie.GuardianDashboard">
+
+    <!-- ✅ Bottom-Right Button Stack -->
+    <LinearLayout
+        android:id="@+id/tabButtonContainer"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnLinkChild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Link Child Device" />
+
+        <Button
+            android:id="@+id/btnRecent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/btn_recent" />
+
+        <Button
+            android:id="@+id/btnFlagged"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/btn_flagged" />
+
+        <Button
+            android:id="@+id/btnFreeze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/btn_freeze" />
+
+        <Button
+            android:id="@+id/btnLinked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/btn_linked" />
+
+        <Button
+            android:id="@+id/btnMascot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/btn_mascot" />
+
+        <Button
+            android:id="@+id/btnScanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/btn_scanner" />
+
+        <Button
+            android:id="@+id/btnPlatforms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/btn_platforms" />
+
+        <Button
+            android:id="@+id/btnSms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/btn_sms" />
+
+        <Button
+            android:id="@+id/btnLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/btn_location" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

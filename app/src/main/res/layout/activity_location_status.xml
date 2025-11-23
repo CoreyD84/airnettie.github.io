@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <!-- 🗺️ OpenStreetMap WebView -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="72dp" />
+
+    <!-- 🚗 Get Directions Button -->
+    <Button
+        android:id="@+id/btnDirections"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Directions"
+        android:textSize="16sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:elevation="4dp" />
+
+    <!-- 🧠 Status Message -->
+    <TextView
+        android:id="@+id/statusMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waiting for child device to sync. Showing default location."
+        android:textColor="@android:color/white"
+        android:background="#88000000"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp" />
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Soft semi-transparent fill -->
+    <solid android:color="#CCFFFFFF" /> <!-- 80% white -->
+
+    <!-- Gentle black border -->
+    <stroke android:width="2dp" android:color="#66000000" /> <!-- 40% black -->
+
+    <!-- Rounded corners -->
+    <corners android:radius="16dp" />
+
+    <!-- Internal padding -->
+    <padding
+        android:left="12dp"
+        android:right="12dp"
+        android:top="8dp"
+        android:bottom="8dp" />
+</shape>

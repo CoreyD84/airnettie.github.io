@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.airnettie.mobile.features.sms.SmsComposeActivity">
+
+    <EditText
+        android:id="@+id/sms_recipient"
+        android:hint="@string/sms_recipient_hint"
+        android:inputType="phone"
+        android:autofillHints="phone"
+        android:importantForAutofill="yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/sms_body"
+        android:hint="@string/sms_message_hint"
+        android:inputType="textMultiLine|textCapSentences"
+        android:autofillHints="sms"
+        android:importantForAutofill="yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="3" />
+
+    <Button
+        android:id="@+id/sms_send"
+        android:text="@string/sms_send_button_text"
+        android:contentDescription="@string/sms_send_button_content_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.airnettie.mobile">
+
+    <!-- 📍 Location & SMS Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MobileNettie">
+
+        <!-- 🗺️ Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY_HERE" />
+
+        <!-- ✅ Activities -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Main Dashboard"
+            android:theme="@style/Theme.MobileNettie"
+            tools:targetApi="31" />
+
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MobileNettie"
+            android:launchMode="singleTask"
+            tools:targetApi="31">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".mobilenettie.GuardianDashboard"
+            android:exported="true"
+            android:label="Guardian Dashboard"
+            android:theme="@style/Theme.MobileNettie"
+            tools:targetApi="31" />
+
+        <!-- ✅ QR generator activity for linking child device -->
+        <activity
+            android:name=".features.guardian.activities.GenerateLinkQrActivity"
+            android:exported="false"
+            android:label="Link Child Device"
+            android:theme="@style/Theme.MobileNettie" />
+
+        <activity android:name=".features.guardian.activities.RecentDetectionsActivity" android:exported="false" android:label="Recent Detections" android:theme="@style/Theme.MobileNettie" />
+        <activity android:name=".features.guardian.activities.FlaggedMessagesActivity" android:exported="false" android:label="Flagged Messages" android:theme="@style/Theme.MobileNettie" />
+        <activity android:name=".features.guardian.activities.FreezeReflexActivity" android:exported="false" android:label="Freeze Reflex" android:theme="@style/Theme.MobileNettie" />
+        <activity android:name=".features.guardian.activities.LinkedChildrenActivity" android:exported="false" android:label="Linked Children" android:theme="@style/Theme.MobileNettie" />
+        <activity android:name=".features.guardian.activities.MascotMoodActivity" android:exported="false" android:label="Mascot Mood" android:theme="@style/Theme.MobileNettie" />
+        <activity android:name=".features.guardian.activities.MessageScannerActivity" android:exported="false" android:label="Message Scanner" android:theme="@style/Theme.MobileNettie" />
+        <activity android:name=".features.guardian.activities.OnlineSafetyActivity" android:exported="false" android:label="Online Safety" android:theme="@style/Theme.MobileNettie" />
+        <activity android:name=".features.guardian.activities.PlatformControlActivity" android:exported="false" android:label="Platform Control" android:theme="@style/Theme.MobileNettie" />
+        <activity android:name=".features.guardian.activities.ConsentOverviewActivity" android:exported="false" android:label="Consent Overview" android:theme="@style/Theme.MobileNettie" />
+        <activity android:name=".features.guardian.activities.SmsDetectionsActivity" android:exported="false" android:label="SMS Detections" android:theme="@style/Theme.MobileNettie" />
+        <activity android:name=".features.guardian.activities.LocationStatusActivity" android:exported="false" android:label="Location Status" android:theme="@style/Theme.MobileNettie" />
+
+        <!-- ✅ SMS Receiver -->
+        <receiver
+            android:name=".components.SmsReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>
